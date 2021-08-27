@@ -12,4 +12,8 @@ export class PlayerService {
   getAll(): Observable<Player []> {
     return this.httpClient.get<Player []>('http://localhost:3001/players');
   }
+  // @ts-ignore
+  save(player): Observable<Player> {
+    return this.httpClient.post('http://localhost:3001/players',player)
+  }
 }

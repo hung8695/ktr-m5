@@ -9,7 +9,7 @@ import { PlayerEditComponent } from './player/player-edit/player-edit.component'
 import { PlayerDeleteComponent } from './player/player-delete/player-delete.component';
 import { PlayerDetailComponent } from './player/player-detail/player-detail.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import {FormsModule} from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
