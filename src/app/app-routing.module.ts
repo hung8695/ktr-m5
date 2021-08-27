@@ -20,7 +20,7 @@ const routes: Routes = [
     component: PlayerEditComponent
   },
   {
-    path: 'player/view',
+    path: 'player/view/:id',
     component: PlayerDetailComponent
   },
   {
