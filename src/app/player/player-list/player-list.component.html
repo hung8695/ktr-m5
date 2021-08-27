@@ -1,0 +1,19 @@
+<h1>Player List</h1>
+<table>
+  <tr>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Champ</td>
+    <td>KDA</td>
+    <td>Description</td>
+  </tr>
+  <tr *ngFor="let player of players; index as i">
+    <td>{{player.id}}</td>
+    <td>{{player.name}}</td>
+    <td>{{player.champ}}</td>
+    <td>{{player.kda}}</td>
+    <td>{{player.des}}</td>
+    <td><a [routerLink]="['/player/edit',player.id]">Edit</a></td>
+    <td><a [routerLink]="['/payer/delete',player.id]">Delete</a></td>
+  </tr>
+</table>
