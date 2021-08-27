@@ -16,4 +16,11 @@ export class PlayerService {
   save(player): Observable<Player> {
     return this.httpClient.post('http://localhost:3001/players',player)
   }
+  // @ts-ignore
+  edit(id: number, player: Player): Observable<Player> {
+    return this.httpClient.put('http://localhost:3001/players/' +id, player)
+  }
+  findById(id: number): Observable<Player> {
+    return this.httpClient.get('http://localhost:3001/players/' + id);
+  }
 }

@@ -16,7 +16,7 @@ const routes: Routes = [
     component: PlayerCreateComponent
   },
   {
-    path: 'player/edit',
+    path: 'player/edit/:id',
     component: PlayerEditComponent
   },
   {
