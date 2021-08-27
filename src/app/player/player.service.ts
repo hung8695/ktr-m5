@@ -23,4 +23,7 @@ export class PlayerService {
   findById(id: number): Observable<Player> {
     return this.httpClient.get('http://localhost:3001/players/' + id);
   }
+  delete(id: number): Observable<Player>{
+    return this.httpClient.delete('http://localhost:3001/players/' + id);
+  }
 }

@@ -24,7 +24,7 @@ const routes: Routes = [
     component: PlayerDetailComponent
   },
   {
-    path: 'player/delete',
+    path: 'player/delete/:id',
     component: PlayerDeleteComponent
   }
 ];
